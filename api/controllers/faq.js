@@ -1,5 +1,6 @@
 module.exports = {
     exits: {
+        error: {},
         success: {
             viewTemplatePath: 'faq',
         }
