@@ -19,4 +19,6 @@
 3'. create a new route called /products in route.js
 4'. create a new model called Product (api/models/Product.js) - sails generate model Product
 5'. create a new controller called product(api/controllers/product.js) - sails generate controller product
+5'.1 complete the actual created (empty controller) with 5.1, 5.2, 5.3 and place also the part of inputs: {}
+5'.2 rename the XXXController to another name
 
