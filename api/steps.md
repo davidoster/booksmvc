@@ -18,4 +18,5 @@
 2'. update on conf/datastores.js adapter and url with your db credentials and connection string
 3'. create a new route called /products in route.js
 4'. create a new model called Product (api/models/Product.js) - sails generate model Product
+5'. create a new controller called product(api/controllers/product.js) - sails generate controller product
 
