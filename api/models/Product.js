@@ -6,13 +6,14 @@
  */
 
 module.exports = {
-
+  tableName: 'products',
   attributes: {
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
+    name: {type: 'string', unique: true, defaultsTo: 'product name', columnName: 'productName'},
+    category: {type: 'string', defaultsTo: 'product name', columnName: 'categoryName'}
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
