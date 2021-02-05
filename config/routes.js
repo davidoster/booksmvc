@@ -23,7 +23,7 @@ module.exports.routes = {
   '/faq': {action: 'faq'},
   '/xxx': {view: 'pages/homepage'},
   '/books': {action: 'books'},
-  '/products': {action: 'products'}
+  '/product/new': {action: 'products/new'}
 
   /***************************************************************************
   *                                                                          *
