@@ -1,0 +1,27 @@
+<h1>List of products</h1>
+
+<div id="products">
+  <h4>id - Name - Category - Created at - Updated at</h4>
+  <ul>
+      <% 
+        var editUrl = "edit"; 
+        var deleteUrl = "delete"; 
+      %>
+    <% for (let i = 0; i < products.length; i++) { %>
+        <% 
+            var myDelete = "/product/" + deleteUrl + "/" + products[i].id;
+            var myEdit   = "/product/" + editUrl   + "/" + products[i].id; 
+        %>
+    <li>
+      <%= products[i].id %> - <%= products[i].name %> - <%=
+      products[i].category%> - <%= new
+      Date(products[i].createdAt).toLocaleString() %> - <%= new
+      Date(products[i].updatedAt).toLocaleString() %><a href="<%=myDelete%>">Delete</a>
+      <a href="<%=myEdit%>">Edit</a>
+    </li>
+    <% } %>
+  </ul>
+</div>
+
+<a href="/product/list">List of Products</a>
+<a href="/product/new">Add new product</a>

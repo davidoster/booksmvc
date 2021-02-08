@@ -26,7 +26,9 @@ module.exports.routes = {
   // '/product': {action: 'products/new'},
   '/product/new': {action: 'products/new'},
   '/product/insert': {action: 'products/save'},
-  '/products': {action: 'products/list'}
+  '/products': {action: 'products/list'},
+  '/product/edit/:id': {action: 'products/edit'},
+  '/product/delete/:id': {action: 'products/delete'}
 
   /***************************************************************************
   *                                                                          *

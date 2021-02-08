@@ -1,0 +1,9 @@
+<div id="products">
+    <h1>Edit a Product</h1>
+    <form action="/product/update" method="post">
+        <input type="text" hidden name="id" value='<%=product.id%>'>
+        Name: <input type="text" name="name" value='<%=product.name%>'><br>
+        Category: <input type="text" name="category" value='<%=product.category%>'><br>
+        <button type="submit">Update Product</button>
+    </form>
+</div>
