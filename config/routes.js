@@ -28,7 +28,8 @@ module.exports.routes = {
   '/product/insert': {action: 'products/save'},
   '/products': {action: 'products/list'},
   '/product/edit/:id': {action: 'products/edit'},
-  '/product/delete/:id': {action: 'products/delete'}
+  '/product/delete/:id': {action: 'products/delete'},
+  'POST /product/update': {action: 'products/update'}
 
   /***************************************************************************
   *                                                                          *

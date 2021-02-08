@@ -5,9 +5,12 @@ module.exports = {
             viewTemplatePath: 'pages/products/edit'
         }
     },
-    fn: async function(inputs,{id}) {
-        console.log(inputs.id);
-        console.log({id});
+    fn: async function({id}) {
+        // {id: 1, name:'sdfsdf'}
+        // console.log(inputs.id);
+        var product = await Product.findOne({id});
+        // console.log({id});
+        return {product};
     }
 
 }
