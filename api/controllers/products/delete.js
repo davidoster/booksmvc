@@ -14,7 +14,7 @@ module.exports = {
             await Product.destroy({id});
             this.res.redirect('/products');
         } else {
-            return {message: 'This product was not found!'};
+            return {message: `This product with id: ${id} was not found!`};
         }
     }
 }

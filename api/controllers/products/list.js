@@ -7,7 +7,7 @@ module.exports = {
 
     fn: async function() {
         var listOfProducts = await Product.find(); 
-        console.log(listOfProducts);
+        // console.log(listOfProducts);
         return {products: listOfProducts}
     }
 }
