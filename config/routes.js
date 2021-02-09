@@ -22,13 +22,13 @@ module.exports.routes = {
   '/': { view: 'pages/homepage' },
   '/faq': {action: 'faq'},
   '/xxx': {view: 'pages/homepage'},
+  '/error': {view: '404'},
   '/books': {action: 'books'},
   // '/product': {action: 'products/new'},
   '/product/new': {action: 'products/new'},
   '/product/insert': {action: 'products/save'},
   '/products': {action: 'products/list'},
   '/product/edit/:id': {action: 'products/edit'},
-  '/product/delete/:id': {action: 'products/delete'},
   'POST /product/update': {action: 'products/update'},
   '/product/delete/:id': {action: 'products/delete'}
 
