@@ -3,6 +3,10 @@ module.exports = {
     attributes: {
         customerId: {
             model: 'Customer'
+        },
+        products: {
+            collection: 'OrderDetails',
+            via:        'orders'
         }
     }
 }

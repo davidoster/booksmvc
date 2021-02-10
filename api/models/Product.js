@@ -13,8 +13,8 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     name: {type: 'string', unique: true, defaultsTo: 'Product Name', columnName: 'productName'},
-    category: {type: 'string', defaultsTo: 'Category Name', columnName: 'categoryName'}
-
+    category: {type: 'string', defaultsTo: 'Category Name', columnName: 'categoryName'},
+    
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
